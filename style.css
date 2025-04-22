@@ -1,35 +1,89 @@
-body{
-  background-color : #bebcb7;
-  margin: 5%;
+html, body {
+  margin: 40px;
+  padding: 0;
+  background-color: #bdb9af;
 }
 
-.main {
-  flex: 1;
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #bdb9af;
+  padding: 10px 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.top-bar.shrink {
+  height: 115px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: #b3aea4;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar.shrink .name {
+  font-size:60px;
+}
+
+.self-info {
+  font-family: "Lilita One", sans-serif;
+  font-style: normal;
+  color: #4d443f;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 16px;
+  margin: 0;
+}
+
+.self-info a {
+  color: #4d443f;
+  text-decoration: none;
+}
+
+.self-info a:hover {
+  text-decoration: underline;
+  color: #333333;
 }
 
 .name {
   color: #586355;
-  margin-bottom: 10px;
-  font-size: 40px;
-
+  margin: 0;
   font-family: "Winky Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
+  font-size: 90px;
+  margin-left: 5%;
 }
 
-.home{
-  font-size: 75px;
+.name a {
+  color: #586355;
+  text-decoration: none;
 }
+
+.name a:hover {
+  font-size: 62px;
+}
+
+.top-p {
+  padding-top: 150px; 
+}
+
 
 p {
   font-family: "IM Fell DW Pica", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 23px;
 
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #headshot {
@@ -40,21 +94,24 @@ p {
 }
 
 
-
 h2 {
-
   font-family: "Lilita One", sans-serif;
   font-weight: 400;
   font-style: normal;
 
   color: #7d8c79;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-left: 3%;
   margin-bottom: 10px;
 }
 
 .display-pic {
   border-radius: 10%;
+}
+
+.display-pic:hover {
+  transform:scale(1.05);
+  box-shadow: 10px 10px #59524d;
 }
 
 .left {
@@ -82,6 +139,63 @@ h2 {
   gap: 10%;
 }
 
+.carousel-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-slides {
+  display: flex;
+  gap: 5%;
+  transition: transform 0.5s ease-in-out;
+  width: 300%; /* 100% per slide if 3 slides */
+}
+
+.slide-wrap {
+  width: 100%;
+  overflow: hidden;
+  padding: 3.5%;
+}
+
+.arrow {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 15%;
+}
+
+.arrow.left {
+  left: -5%;
+}
+
+.arrow.right {
+  right: -1%;
+}
+
+.nav-circles {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.nav-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #a4b0a2;
+  border-radius: 50%;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: -2%;
+}
+
+.nav-circle.active {
+  background-color: #889684;
+}
+
+
 /* Toy Crossbow */
 
 .project-title {
@@ -91,6 +205,8 @@ h2 {
 
   color: 	#4d443f;
   font-size: 75px;
+  padding-top: 50px;
+  margin-left: 3%;
 }
 
 #group-pic {
@@ -113,29 +229,28 @@ h2 {
   border-radius: 20%;
 }
 
+/* Resume */
+.pdf {
+  display: block;
+  margin: auto;
+}
 
 
-@media (max-width: 680px) {
-    .logo {
-      width: 100px;
-    }
-  
-    h1 {
-      font-size: 3.5rem;
-      text-align: center;
-    }
-  
-    .card {
-      width: 100%;
-      display: block;
-      margin-bottom: 30px;
-      text-align: justify;
-    }
-  
-    .card img {
-      margin-bottom: 10px;
-      width: 100%;
-      display: inline;
-      object-fit: cover;
-    }
+@media (max-width: 920px) {
+
+  .top-bar.shrink {
+    height: 150px;
+    text-align:center;
+    flex-direction: column;
   }
+  
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+
