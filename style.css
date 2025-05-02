@@ -1,0 +1,302 @@
+html, body {
+  margin: 40px;
+  padding: 0;
+  background-color: #bdb9af;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #bdb9af;
+  padding: 10px 5%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+
+.top-bar.shrink {
+  background-color: #b3aea4;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar.shrink .name {
+  font-size: 60px;
+}
+
+.menu {
+  display: none;
+}
+
+.top-bar.shrink .menu {
+  display: inline-flex;
+}
+
+.menu-button {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-button .bar {
+  height: 4px;
+  background-color: #4d443f;
+  border-radius: 2px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 2;
+  background-color: #b3aea4;
+  border-radius: 10%;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1001;
+}
+
+.menu:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #4d443f;
+  font-family: "Lilita One", sans-serif;
+  font-size: 25px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #bdb9af;
+  border-radius: 10%;
+}
+
+.name {
+  font-family: "Winky Sans", sans-serif;
+  font-size: 90px;
+  display: inline-flex;
+  margin-left: 6%;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #586355;
+}
+
+.self-info {
+  display: inline-flex;
+  float: right;
+  gap: 10px;
+  font-family: "Lilita One", sans-serif;
+  font-size: 16px;
+  color: #4d443f;
+  
+}
+
+.self-info a {
+  color: #4d443f;
+  text-decoration: none;
+}
+
+.self-info a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+
+.top-p {
+  padding-top: 135px; 
+}
+
+
+p {
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
+
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+#headshot {
+  display: block;
+  margin: auto;
+  border: 10px solid #a4b0a2;
+  border-radius: 40%;
+}
+
+
+h2 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  color: #7d8c79;
+  font-size: 3.5rem;
+  margin-left: 4%;
+  margin-bottom: 10px;
+}
+
+.display-pic {
+  border-radius: 10%;
+}
+
+.display-pic:hover {
+  transform:scale(1.05);
+  box-shadow: 10px 10px #59524d;
+}
+
+.left {
+  display: inline-block;
+}
+
+.right {
+  display: inline-block;
+}
+
+
+.left-title{
+  float: left;
+  margin-left: 20%;
+}
+
+.right-title{
+  float: right;
+  margin-right: 20%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 10%;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-slides {
+  display: flex;
+  gap: 5%;
+  transition: transform 0.5s ease-in-out;
+  width: 400%; /* 100% per slide if 3 slides */
+}
+
+.slide-wrap {
+  width: 100%;
+  overflow: hidden;
+  padding: 3.5%;
+}
+
+.arrow {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 13%;
+}
+
+.arrow.left {
+  left: -4%;
+}
+
+.arrow.right {
+  right: 9%;
+}
+
+.nav-circles {
+  display: flex;
+  justify-content: center;
+  margin-left: -15%;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.nav-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #a4b0a2;
+  border-radius: 50%;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: -2%;
+}
+
+.nav-circle.active {
+  background-color: #889684;
+}
+
+
+/* Toy Crossbow */
+
+.project-title {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  color: 	#4d443f;
+  font-size: 75px;
+  padding-top: 50px;
+  margin-left: 7%;
+}
+
+#group-pic {
+  display: block;
+  margin: auto;
+  border-radius: 10%;
+}
+
+.trigger-container, .recall-container {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+}
+
+.trigger-text, .recall-text {
+  flex: 1; 
+}
+
+.trigger-img, .recall-img {
+  border-radius: 20%;
+}
+
+.recall-img {
+  margin-left: 5%;
+}
+
+.trigger-img {
+  margin-right: 15%;
+}
+
+/* Resume */
+.pdf {
+  display: block;
+  margin: auto;
+}
+
+
+@media (max-width: 920px) {
+
+  .top-bar.shrink {
+    height: 150px;
+    text-align:center;
+    flex-direction: column;
+  }
+  
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+
