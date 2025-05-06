@@ -50,23 +50,26 @@ html, body {
   border-radius: 2px;
 }
 
-.dropdown-content {
+.dropdown-container {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 20px;
-  background-color: #b3aea4;
-  border-radius: 10%;
   min-width: 150px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1001;
+  top: 60%;
+  left: 20px;
 }
 
-.menu:hover .dropdown-content {
+.dropdown-content {
+  background-color: #b3aea4;
+  border-radius: 10%;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.menu:hover .dropdown-container {
   display: block;
 }
 
-.dropdown-content a {
+.dropdown-container a {
   color: #4d443f;
   font-family: "Lilita One", sans-serif;
   font-size: 25px;
@@ -75,9 +78,9 @@ html, body {
   display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-container a:hover {
   background-color: #bdb9af;
-  border-radius: 10%;
+  border-radius: 15%;
 }
 
 .name {
