@@ -8,7 +8,7 @@ const isHomePage = window.location.pathname.endsWith("index.html") || window.loc
 let currentSlide = 0;
 
 function updateCarousel() {
-  slides.style.transform = `translateX(-${currentSlide * 27.3}%)`;
+  slides.style.transform = `translateX(-${currentSlide * 37.3}%)`;
   circles.forEach((c, i) => {
     c.classList.toggle("active", i === currentSlide);
   });

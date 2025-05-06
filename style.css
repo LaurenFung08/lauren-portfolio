@@ -93,10 +93,7 @@ html, body {
 .self-info {
   margin-left: auto;
   display: inline-flex;
-<<<<<<< HEAD
-=======
   margin-left: auto;
->>>>>>> 55807202202a4264dc4447dd02fe054235750bc5
   gap: 10px;
   font-family: "Lilita One", sans-serif;
   font-size: 16px;
@@ -192,7 +189,7 @@ h2 {
   display: flex;
   gap: 5%;
   transition: transform 0.5s ease-in-out;
-  width: 400%; /* 100% per slide if 3 slides */
+  width: 300%; /* 100% per slide if 3 slides */
 }
 
 .slide-wrap {
@@ -215,7 +212,7 @@ h2 {
 }
 
 .arrow.right {
-  right: 9%;
+  right: 4%;
 }
 
 .nav-circles {
@@ -289,11 +286,20 @@ h2 {
 }
 
 
-@media (max-width: 920px) {
+@media (max-width: 1150px) {
 
   .top-bar.shrink {
-    height: 150px;
+    height: 180px;
     text-align:center;
+    flex-direction: column;
+  }
+
+  .self-info {
+    margin-left: 0;
+  }
+
+  .top-bar {
+    text-align: center;
     flex-direction: column;
   }
   
