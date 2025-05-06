@@ -89,7 +89,7 @@ html, body {
 
 .self-info {
   display: inline-flex;
-  float: right;
+  margin-left: auto;
   gap: 10px;
   font-family: "Lilita One", sans-serif;
   font-size: 16px;
