@@ -93,6 +93,10 @@ html, body {
 .self-info {
   margin-left: auto;
   display: inline-flex;
+<<<<<<< HEAD
+=======
+  margin-left: auto;
+>>>>>>> 55807202202a4264dc4447dd02fe054235750bc5
   gap: 10px;
   font-family: "Lilita One", sans-serif;
   font-size: 16px;
