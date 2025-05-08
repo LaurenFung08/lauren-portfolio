@@ -282,6 +282,16 @@ h2 {
   margin-right: 15%;
 }
 
+/* Solidworks Design*/
+ul {
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
+  margin-left: -150px;
+  margin-right: -150px;
+}
+
 /* Resume */
 .pdf {
   display: block;
