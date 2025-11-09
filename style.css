@@ -91,6 +91,7 @@ html, body {
   margin-bottom: 0;
   margin-top: 0;
   a:link { color: #586355;}
+  a:visited {color: #586355;}
 }
 
 .self-info {
